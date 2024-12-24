@@ -1,0 +1,205 @@
+.blog-article{
+    display: flex;
+    max-width: 960px;
+    margin: 70px auto 30px;
+}
+.blog-container{
+    flex: 2;
+    padding: 30px 15px;
+}
+.blog-aside{
+    flex: 1;
+    padding: 30px 15px;
+}
+
+.blog-card{
+    background: #acb3b460;
+    margin: 0 auto 50px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.blog-cover{
+    background: lightgreen url('../image/blog/blog.jpg') center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.blog-cover2{
+    background: lightgreen url('../image/blog/dev.jpg') center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+.blog-body{
+    padding: 27px;
+}
+.blog-title{
+    margin-bottom: 25px;
+}
+.blog-title h2{
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 1.3em;
+}
+.blog-text p {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+.blog-title{
+    line-height: 1.5em;
+    color: lightseagreen;
+}
+
+.blog-tags ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    background: lightslategray;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px 0;
+}
+.blog-tags li {
+    padding: 0 5px 0 0;
+}
+.blog-tags a{
+    text-decoration: none;
+    color: #446644;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 14px;
+    background: white;
+    transition: all 250ms ease;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0);
+}
+.blog-tags a:hover{
+    border: 1px solid #464646;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Стили для блока лайков и дизлайков */
+.blog-feedback {
+    margin-top: 20px; /* Отступ сверху */
+    padding: 10px 0;  /* Отступы внутри */
+    border-top: 1px solid #ccc; /* Тонкая линия сверху */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Стили для контейнера кнопок лайков и дизлайков */
+.like-dislike {
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание элементов по центру */
+    gap: 15px; /* Расстояние между кнопками и счетчиками */
+}
+
+/* Стили для кнопок */
+.like-button, .dislike-button {
+    background: none; /* Без фона */
+    border: none; /* Без рамки */
+    font-size: 24px; /* Размер кнопок */
+    cursor: pointer; /* Курсор при наведении */
+    transition: transform 0.3s ease; /* Плавное изменение при наведении */
+}
+
+.like-button:hover, .dislike-button:hover {
+    transform: scale(1.2); /* Увеличение кнопки при наведении */
+}
+
+/* Стили для счетчиков лайков и дизлайков */
+.like-count, .dislike-count {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: #333;
+}
+
+
+.like-count {
+    color: green; 
+}
+
+.dislike-count {
+    color: red; /* Красный цвет для дизлайков */
+}
+
+.blog-footer{
+    border-top: 1px solid lightblue;
+    padding: 12px 0;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+
+.aside-search,
+.aside-recent {
+    background: #f7f7ff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    padding: 45px 25px 50px;
+    margin-bottom: 50px;
+}
+
+.search-title{
+    font-size: 25px;
+    color: #454546;
+}
+.search-delimiter{
+    width: 100px;
+    margin: 25px 0 37px;
+    height: 1px;
+    background: rgba(206,65,110,0.74);
+}
+.search-text, .search-do{
+    border: 1px solid #ce41ce;
+    padding: 15px;
+    border-radius: 6px;
+}
+.search-text{
+    width: 170px;
+}
+.search-do{
+    background: #ce41ce;
+    color: white;
+    cursor: pointer;
+}
+.recent-item:not(:last-child)
+{
+    margin-bottom: 25px;
+    border-bottom: 1px solid lightcyan;
+    padding-bottom: 15px;
+}
+.recent-item p {
+    color: #454546;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: color 250ms ease;
+}
+.recent-item p:hover{
+    color: #ce41ce;
+}
+.recent-item span {
+    color: #454546;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 576px){
+    .aside-search,
+    .aside-recent {
+        background: #f7f7ff;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        border-radius: 12px;
+        padding: 45px 25px 50px;
+        margin-bottom: 50px;
+    }
+}

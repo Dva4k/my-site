@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr" xmlns="http://www.w3.org/1999/html">
+	<head>
+		<meta charset="utf-8">
+		<title>Заголовок</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Ro-boto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Подключение библиотеки-->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<!--Подключение сценария-->
+		<script src="js/script.js"></script>
+		<script src="js/popup.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<nav id="myTopnav">
+				<img src="image/computer.png" alt="Логотип сайта">
+			<ul class="menu">
+			<li><a href="index.html" class="menu-element" data-link="top" title="На главную">Главная</a></li>
+			<li><a href="#services" class="menu-element" data-link="services" title="Общая информация">Общее</a></li>
+			<li><a href="#portfolio" class="menu-element" data-link="portfolio" title="В галерею">Галерея</a></li>
+			<li><a href="contacts.html" class="menu-element"  title="Контактные данные">Контакты</li>
+			<li><a href="blog.html" class="menu-element" title="НАШ БЛОГ">НАШ БЛОГ</a>
+			<li><a href ="gallery.html" class="menu-element" title="Галерия">Галерия</a></li>
+
+
+			</ul>
+				<div id="hamburger" class="icon ">&#9776;</div>
+			</nav>
+		</header>
+		<main>
+			<section id="top">
+				<img class="top-image" src="image/01.jpg" alt="Обложка страницы">
+			</section>
+			<section class="services" id="services">
+				<h1>Наши возможности</h1>
+				<div class="delimiter"></div>
+				<p>Nissan GT-R  — суперкар, выпускаемый компанией Nissan Motor. </p>
+				<div class="services-container">
+					<div class="container-row">
+						<div class="row-item">
+							<img src="image/icons/icon-1.png" alt="">
+							<h2>Почта</h2>
+							<p>Описание</p>
+						</div>
+						<div class="row-item">
+							<img src="image/icons/icon-2.png" alt="">
+							<h2>Профиль</h2>
+							<p>Описание</p>
+						</div>
+						<div class="row-item">
+							<img src="image/icons/icon-3.png" alt="">
+							<h2>Контакты</h2>
+							<p>Описание</p>
+						</div>
+						<div class="row-item">
+							<img src="image/icons/icon-4.png" alt="">
+							<h2>Местоположение</h2>
+							<p>Описание</p>
+						</div>
+						<div class="row-item">
+							<img src="image/icons/icon-5.png" alt="">
+							<h2>Группа</h2>
+							<p>Описание</p>
+						</div>
+						<div class="row-item">
+							<img src="image/icons/icon-6.png" alt="">
+							<h2>Ссылки</h2>
+							<p>Описание</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="overlay black-back">
+				<h2 class="main-title">Подробности</h2>
+				<div class="delimiter"></div>
+				<p class="main-title-description">Текст</p>
+				<button class="common-button" type="button" name="button">Узнать</button>
+			</section>
+
+			<section class="portfolio" id="portfolio">
+				<h2 class="main-title">Наши работы</h2>
+				<div class="delimiter"></div>
+				<p class="main-title-description">Текст</p>
+				<div class="portfolio-container">
+					
+					<div class="portfolio-item" style="background-image: url('image/portfolio/img01.jpg')" data-src="image/portfolio/img01.jpg">
+						<div class="description-container">
+							<p class="portfolio-title">Text title</p>
+							<p class="portfolio-description">Text description, many text.</p>
+						</div>
+					</div>
+					<div class="portfolio-item" style="background-image: url('image/portfolio/img02.jpg')" data-src="image/portfolio/img02.jpg">
+						<div class="description-container">
+							<p class="portfolio-title">Text title</p>
+							<p class="portfolio-description">Text description, many text.</p>
+						</div>
+					</div>
+					<div class="portfolio-item" style="background-image: url('image/portfolio/img03.jpg')" data-src="image/portfolio/img03.jpg">
+						<div class="description-container">
+							<p class="portfolio-title">Text title</p>
+							<p class="portfolio-description">Text description, many text.</p>
+						</div>
+					</div>
+					<div class="portfolio-item" style="background-image: url('image/portfolio/img04.jpg')" data-src="image/portfolio/img04.jpg">
+						<div class="description-container">
+							<p class="portfolio-title">Text title</p>
+							<p class="portfolio-description">Text description, many text.</p>
+						</div>
+					</div>
+					<div class="portfolio-item" style="background-image: url('image/portfolio/img05.jpg')" data-src="image/portfolio/img05.jpg">
+						<div class="description-container">
+							<p class="portfolio-title">Text title</p>
+							<p class="portfolio-description">Text description, many text.</p>
+						</div>
+					</div>
+					<div class="portfolio-item" style="background-image: url('image/portfolio/img06.jpg')" data-src= "image/portfolio/img06.jpg">
+						<div class="description-container">
+							<p class="portfolio-title">Text title</p>
+							<p class="portfolio-description">Text description, many text.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact" id="contact">
+				<h2 class="main-title">Контактная информация<h2>
+					<div class="delimiter"></div>
+					<p class="main-title-description">Ответим на ваши вопросы</p>
+					<form id="contact-form" method="post" action="contact.php" class="contact-form">
+						<input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+						<input name="email" type="email" class="col" placeholder="Email адрес *" required>
+						<input name="theme" type="text" class="col" placeholder="Тема сообщения">
+						<input name="phone" type="tel" class="col" placeholder="Номер телефона">
+						<textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+						<span class="row-col check">
+							<input id="accept" type="checkbox" class="" required>
+							<label for="accept">Я прочитал(а) и принимаю условия
+							<a href="#">Пользовательского соглашения</a> </label>
+						</span>
+						<input type="submit" id="submit" class="submit btn" value="Отправить сообщение">
+					</form>
+			</section>
+						<!--СЕКЦИЯ С ОТЗЫВАМИ-->
+						<section class="testimonials">
+							<h1 class="main-title">Отзывы</h1>
+							<div class="delimiter"></div>
+							<p class="main-title-description">Наши клиенты о нас</p>
+							<!--Внешний вид блока-->
+							<div class="testimonials-container">
+								<!--обертка-->
+								<div class="testimonials-inner">
+									<!--элементы-->
+									<div class="testimonials-card">
+										<div class="card-row">
+											<img class="card-img" src="image/card-clients/01.jpg" alt="">
+											<div class="card=head">
+												<h4>Angelina Clory</h4>
+												<span>25/02/2021</span>
+											</div>
+											</div>
+											<p>Очень все классно</p>
+									</div>
+									<!--2 отзыв-->
+									<div class="testimonials-card">
+										<div class="card-row">
+											<img class="card-img" src="image/card-clients/02.jpg" alt="">
+											<div class="card=head">
+												<h4>Владимир К.</h4>
+												<span>3/04/2021</span>
+											</div>
+											</div>
+											<p>Ставлю 5 звезд!</p>
+									</div>
+
+									<!---3-->
+									<div class="testimonials-card">
+										<div class="card-row">
+											<img class="card-img" src="image/card-clients/04.jpg" alt="">
+											<div class="card=head">
+												<h4>Евгений Сириус</h4>
+												<span>3/05/2021</span>
+											</div>
+											</div>
+											<p>Могли бы и лучше!!</p>
+									</div>
+									<!--4-->
+									<div class="testimonials-card">
+										<div class="card-row">
+											<img class="card-img" src="image/card-clients/05.jpg" alt="">
+											<div class="card=head">
+												<h4>Александр Г.</h4>
+												<span>3/05/2021</span>
+											</div>
+											</div>
+											<p>Сервис отличный!</p>
+									</div>
+								</div>
+									<!--кнопки-->
+									<div class="testimonials-controls">
+										<div class="control-item active"></div>
+										<div class="control-item"></div>
+										<div class="control-item"></div>
+									</div>
+						</section>
+
+		</main>
+		
+		<footer>
+		<nav>
+			<ul class="menu" >
+				<li><a href="index.html" class="menu-element" data-link="top" title="На главную">Главная</a></li>
+				<li><a href="#services" class="menu-element" data-link="services" title="На услуги">Информация</a></li>
+				<li><a href="#portfolio" class="menu-element" data-link="portfolio" title="В галерею">Галерея</a></li>
+				<li><a href="contacts.html" class="menu-element" title="Контактные данные">Контакты</a></li>
+			</ul>
+		</nav>
+			<div class="brand">
+				<img src="image/computer.png" alt="Логотип сайта">
+				<span>AWESOME</span>
+			</div>
+			<div class="social">
+				<a href="#" title="Facebook" target="_blank">
+					<img class="social-img" src="image/social/001-facebook.png" alt="Facebook">
+				</a>
+				<a href="#" title="LinkedIn" target="_blank">
+					<img class="social-img" src="image/social/004-linkedin.png" alt="LinkedIn">
+				</a>
+				<a href="#" title="Instagram" target="_blank">
+					<img class="social-img" src="image/social/005-instagram.png" alt="Instagram">
+				</a>
+				<a href="#" title="Twitter" target="_blank">
+					<img class="social-img" src="image/social/007-twitter.png" alt="Twitter">
+				</a>
+				<a href="#" title="Tumblr" target="_blank">
+					<img class="social-img" src="image/social/010-tumblr.png" alt="Tumblr">
+				</a>
+			</div>
+			<div class="copyright">Copyright MySite 2024</div>
+		</footer>
+	</body>
+</html>
